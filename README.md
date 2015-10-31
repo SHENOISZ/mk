@@ -1,2 +1,4 @@
-# mk
-Simple blog make in python django
+# SHENOISZ
+
+#python django
+Simple blog
