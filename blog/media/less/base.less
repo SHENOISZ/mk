@@ -1,0 +1,81 @@
+/* CCSS file, use compilator.py */
+
+@font-face {
+    font-family: canarolight;
+    src: url('/media/fonts/Canaro-ExtraLight.otf');
+}
+
+@font-face {
+    font-family: canaro;
+    src: url('/media/fonts/Canaro-Light.otf');
+}
+
+@font-face {
+    font-family: velocity;
+    src: url('/media/fonts/velocity-font.ttf');
+}
+
+::selection {
+    @bg_color;
+    @lk_color;
+}
+*::selection {
+    @bg_color;
+    @lk_color;
+}
+
+body { font-family: canarolight; }
+.row { margin: 0px; padding: 0px; !important; }
+h1 { text-align: center; color: #666; }
+.default-color { color: #666; }
+.menu { background: transparent; margin-top: 5px; }
+.menu a { color: #999; text-decoration: none; font-family: canaro; }
+.menu li:hover a { @lk_color; text-decoration: none; font-family: canaro; cursor: pointer; }
+.menu a:hover { @lk_color; text-decoration: none; font-family: canaro; cursor: pointer; }
+.menu li { background: transparent; list-style: none; padding: 10px; }
+.menu li:hover { @bg_color; list-style: none; padding: 10px; }
+
+.navbar-color { background: transparent; !important; }
+.btn-responsivo { @bg_color; margin: 0px; }
+.btn-responsivo span { background: #fff; }
+.container_ { position: relative; width: 90%; height: auto; margin-left: auto; margin-right: auto; }
+
+.foto { position: relative; width: 100px; height: 100px; border-radius: 100px; background: #ccc; margin-left: auto; margin-right: auto; background: url("/media/images/perfil.jpg"); background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-position: right; }
+.perfil { position: fixed; margin-top: 20px; }
+.perfil h2 { color: #666; }
+.perfil a:hover { text-decoration: none; }
+.social { font-size: 72px; @social_color; }
+    .social:hover { font-size: 72px; color: #999; }
+.header1 { font-size: 92px; color: #999; }
+
+.footer_ { width: 100%; height: 30px; background: #333; }
+.lk-django { text-decoration:none; color:#999; }
+    .lk-django:hover { text-decoration: none; @color; }
+.margin-top-person { margin-top: 5px; color: #fff; }
+
+.form-align { position: relative; max-width: 480px; min-width: 260px; margin-left: auto; margin-right: auto; !important; }
+.btn-color { @bg_color; @lk_color; width: 100%; !important; }
+    .btn-color:hover { background: #999; color: #fff; width: 100%; !important; }
+.borda-normal { border-radius: 0px; border: 1px solid @form_color; !important; }
+.borda-normal:focus { box-shadow: 0px 0px 5px @form_color; border: 1px solid @form_color; !important; }
+.borda-normal:active { box-shadow: 0px 0px 5px @form_color; border: 1px solid @form_color; !important; }
+.contorno-icon { border-radius: 20px;  @bg_color; width: 20px; height: 20px; padding: 6px; text-align: center; }
+.comentario-fundo { position: relative; background: #889; padding: 10px; border-radius: 3px; top: 10px; }
+.comentario-fundo2 { position: relative; top: 10px; }
+
+.required1 { color: #ff0000; font-size: 18px; margin-bottom: -8px; display: none; }
+.required2 { color: #ff0000; font-size: 18px; margin-bottom: -8px; display: none; }
+.required3 { color: #ff0000; font-size: 18px; margin-bottom: -8px; display: none; }
+.comentario-color { color: #fff; }
+.comentario-container { border-radius: 5px; border: 3px solid #ccc; position: relative; max-width: 480px; height: auto; padding: 10px; min-width: 260px; margin-left: auto; margin-right: auto; margin-bottom: 10px; background: #999; !important; }
+
+@media (max-width: 991px) {
+    .lateral { display: none; }
+    .perfil { position:relative; margin-top:20px; }
+}
+
+@media (max-width: 767px) {
+    .navbar-color { background: #666; !important; }
+    .menu { background: #666; }
+    .menu a { color:#fff; font-size: 16px; }
+}
