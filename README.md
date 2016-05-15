@@ -1,6 +1,8 @@
 # python django
 <h4>Simple blog responsive with django 1.8</h4>
 
+![CSCore Logo](https://raw.githubusercontent.com/SHENOISZ/mk/master/screenshots/DeepinScreenshot20150926010745.png)
+
 # license
 
 Copyright (c) 2016 Marcelo Rodrigues
